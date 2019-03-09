@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Epic Mail - Forgot Password Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header">
+    <div class="section">
+      <h3><span class="epic-color"><a href="index.html">Epic Mail</a></span></h3>
+    </div>
+    <div class="section">
+      <p>The Best Mail App.</p>
+    </div>
+  </div>
+  <div class="nav">
+    <ul id="container">
+      <li><a href="index.html" class="change">Home</a></li>
+      <li style="float:right"><a href="signup.html" class="change">Signup</a></li>
+      <li style="float:right"><a class="change" href="login.html">Login</a></li>
+    </ul>
+  </div> 
+  <div id="form-space" class="main">
+    <form id="form1" action="#" method="post" onsubmit="return forgotPwd()" style="border:1px solid #ccc">
+      <div class="container">
+        <h1 class="center">Forgot Password Form</h1>
+        <p class="center">Please enter your email address below and we will send you information to change your password.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="email" id="email" name="email" placeholder="Enter Email Address">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="pwd" class="pwd" name="password" placeholder="Enter Password">
+        <p id="error" style="color: red; text-align: center; font-weight: 900"></p>
+        <button type="submit" name="submit">Reset</button>
+      </div>
+    </form>
+    
+  </div> 
+  <div class="footer">
+    <p>© 2019. All rights reserved</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
